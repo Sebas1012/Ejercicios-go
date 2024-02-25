@@ -3,68 +3,32 @@ package main
 import "fmt"
 
 func main() {
-	/*En Go hay diferentes formas de crear variables, donde unas son mas explicitas que otras a la hora de definir el tipo de dato que se
-	almacenara en la variale.
+	//Manera de declarar variables en Go
+	//Tipos de variable: int, string, bool, const
+	var a string = "Inicial"
+	fmt.Println(a)
 
-	Dos maneras en que se pueden definir variables son:
+	var b, c int = 4, 5
+	fmt.Println(b + c)
 
-	var nombre = expresion
-	var nombre tipo = expresion
+	var d = true
+	fmt.Println(d)
 
-	*/
+	var e int
+	fmt.Println(e)
 
-	var edad_1 = 22
-	var edad_2 int = 21
+	//Forma Resumida Variables
+	f := "Short"
+	fmt.Println(f)
 
-	fmt.Println(edad_1)
-	fmt.Println(edad_2)
+	g := 5 + 5
+	fmt.Println(g)
 
-	/*Tambien es importante tener en cuenta que se pueden generar declaraciones de multiples variables de manera "resumida" de las siguientes maneras
+	//Forma Resumida Constantes
+	f = "Long"
+	fmt.Println(f)
 
-	var nombre_1, nombre_2, nombre_3 tipo
-	var(
-		nombre_1 tipo
-		nombre_2 tipo
-		nombre_3 tipo
-	)
-	var(
-		nombre_1 = expresion
-		nombre_2 = expresion
-		nombre_3 = expresion
-	)
-	*/
+	g = 6 + 6
+	fmt.Println(g)
 
-	var a, b, c int
-	var (
-		nombre string
-		edad_3 int
-		acceso bool
-	)
-	var (
-		genero   = "M"
-		acceso_2 = true
-	)
-
-	fmt.Println(a, b, c)
-	fmt.Println(nombre, edad_3, acceso)
-	fmt.Println(genero, acceso_2)
-
-	/*Por ultimo tenemos la asignacion corta de variables, la cual nos permite ahorrarnos el var y el tipo ya que automaticamente interpreta el tipo de dato.
-	Esta declaracion tiene una particularidad, y es que solo puede ser usada dentro de funciones y no fuera ya que de esa manera generara un error.
-
-	La asignacion se puede hacer de la siguiente manera:
-
-	Individual:
-
-	nombre := expresion
-
-	Multiple:
-
-	nombre_1, nombre_2, nombre_3 := expresion_1, expresion_2, expresion_3
-	*/
-
-	color := "Rojo"
-	peso, valor := 12.5, 300
-
-	fmt.Println(color, peso, valor)
 }
